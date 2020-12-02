@@ -10,6 +10,7 @@ def get_twosum_product(expense_report: list, target: int) -> int:
 
     return None
 
+
 def get_threesum_product(expense_report: list, target: int) -> int:
     for expense in expense_report:
         twosum_target = target - expense
@@ -20,6 +21,7 @@ def get_threesum_product(expense_report: list, target: int) -> int:
 
 def load_input(file_name: str) -> list:
     return [int(x.strip()) for x in open(file_name).readlines()]
+
 
 if __name__ == "__main__":
     FILENAME = "input/day01.txt"

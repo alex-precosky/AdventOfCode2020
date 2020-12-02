@@ -1,6 +1,7 @@
 import unittest
 from day01 import get_twosum_product, get_threesum_product, load_input
 
+
 class Test(unittest.TestCase):
     def test_twosum(self):
         FILENAME = "input/example01_1.txt"
