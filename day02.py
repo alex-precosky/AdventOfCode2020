@@ -17,8 +17,8 @@ class PasswordRule(NamedTuple):
         '''
         letter = input_str[-1]
 
-        min_count = int(re.search('\d+', input_str).group())
-        max_count = int(re.search('(?<=-)\d+', input_str).group())
+        min_count = int(re.search(r'\d+', input_str).group())
+        max_count = int(re.search(r'(?<=-)\d+', input_str).group())
 
         return PasswordRule(letter, min_count, max_count)
 
